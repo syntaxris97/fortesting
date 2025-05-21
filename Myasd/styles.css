@@ -505,6 +505,118 @@ footer {
     font-size: 14px;
 }
 
+/* Movie Detail Page Styles */
+.movie-details-page {
+    margin-top: 70px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.movie-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+    z-index: -1;
+}
+
+.movie-detail-page {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.movie-info-page {
+    flex: 1;
+}
+
+.movie-info-page h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.movie-meta-page {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-meta-page span {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.movie-meta-page span i {
+    margin-right: 5px;
+    color: #e50914;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.genres span {
+    background-color: #252836;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.overview-page {
+    margin-bottom: 20px;
+}
+
+.overview-page h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.overview-page p {
+    line-height: 1.8;
+}
+
+.movie-details-info {
+    margin-bottom: 30px;
+}
+
+.movie-details-info p {
+    margin-bottom: 10px;
+}
+
+.movie-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-trailer {
+    background-color: #252836;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-trailer i {
+    margin-right: 10px;
+}
+
+.btn-trailer:hover {
+    background-color: #333;
+}
+
 /* Media Queries */
 @media (max-width: 991px) {
     nav {
@@ -536,6 +648,10 @@ footer {
         margin-bottom: 20px;
     }
 
+    .movie-detail-page {
+        flex-direction: column;
+    }
+    
     .footer-logo,
     .footer-links,
     .footer-social {
